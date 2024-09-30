@@ -194,12 +194,12 @@
          enable = true;
       }; 
 
-      fish = {
-         enable = true;
-         interactiveShellInit = ''
-            set fish_greeting # Disable greeting
-         '';
-      };
+      #fish = {
+      #   enable = true;
+      #   interactiveShellInit = ''
+      #      set fish_greeting # Disable greeting
+      #   '';
+      #};
 
       git = {
          enable = true;

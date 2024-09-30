@@ -206,7 +206,7 @@
 
    # Define a user account. Don't forget to set a password with ‘passwd’.
    users = {
-      defaultUserShell = pkgs.fish;
+      defaultUserShell = pkgs.bash;
       users.george = {
          isNormalUser = true;
          description = "George";
@@ -304,7 +304,7 @@
    };
 
    programs = {
-      fish.enable = true;
+      # fish.enable = true;
       steam = {
          enable = true;
          remotePlay.openFirewall = true;
