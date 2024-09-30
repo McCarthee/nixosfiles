@@ -112,6 +112,7 @@
             enable-hot-corners = false;
             gtk-theme = "adw-gtk3-dark";
             font-antialiasing = "rgba";
+            font-name = "Inter Variable 11";
             monospace-font-name = "JetBrainsMono Nerd Font 10";
             show-battery-percentage = true;
             clock-show-weekday = true;
@@ -159,6 +160,14 @@
 
          "org/gtk/settings/file-chooser" = {
             clock-format = "12h";
+         };
+
+         "org/gnome/nautilus/preferences" = {
+            default-folder-viewer = "list-view";
+         };
+
+         "org/gnome/nautilus/list-view" = {
+            default-zoom-level = "small";
          };
 
          "com/raggesilver/BlackBox" = {
@@ -314,6 +323,12 @@
       desktopEntries = {
          htop = {
             name = "Htop";
+            type = "Application";
+            noDisplay = true;
+         };
+
+         btop = {
+            name = "btop++";
             type = "Application";
             noDisplay = true;
          };

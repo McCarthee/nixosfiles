@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, inputs, lib, ... }:
 
 {
    imports = 
@@ -28,8 +28,6 @@
 
       pulseaudio.enable = false;
    };
-
-   powerManagement.cpuFreqGovernor = "performance";
 
    # Bootloader.
    boot = {
