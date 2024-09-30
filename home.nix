@@ -184,6 +184,7 @@
                (mkUint32 10)
                (mkUint32 10) 
             ];
+            working-directory-mode = lib.hm.gvariant.mkUint32 1;
          };
       };
    };
@@ -192,14 +193,7 @@
       # Let Home Manager install and manage itself.
       home-manager = {
          enable = true;
-      }; 
-
-      #fish = {
-      #   enable = true;
-      #   interactiveShellInit = ''
-      #      set fish_greeting # Disable greeting
-      #   '';
-      #};
+      };
 
       git = {
          enable = true;
@@ -341,12 +335,6 @@
 
          cups = {
             name = "Manage Printing";
-            type = "Application";
-            noDisplay = true;
-         };
-
-         fish = {
-            name = "fish";
             type = "Application";
             noDisplay = true;
          };
