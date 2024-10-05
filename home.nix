@@ -244,6 +244,8 @@
             catppuccin.catppuccin-vsc # Catppuccin theme
             catppuccin.catppuccin-vsc-icons # Catppuccin icon theme
             bradlc.vscode-tailwindcss # Tailwind
+            vitaliymaz.vscode-svg-previewer # SVG Previewer
+            github.vscode-github-actions # GitHub Actions
          ];
       };
 
